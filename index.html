@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>audio</title>
+  <style>
+    #box {
+      position: relative;
+    }
+    .lsiten-avarter {
+      width: 120px;
+      height: 120px;
+      overflow: hidden;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-60px) translateY(-60px) rotate(15deg);
+    }
+    .lsiten-avarter img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body style="height: 100%;">
+  <button id="add">添加音乐</button>
+  <input id="loadfile" type="file">
+  <div id="box" style="height: 100%;">
+    <div class="lsiten-avarter">
+      <img src="./avarter.jpg"/>
+    </div>
+  </div>
+  <script src="./js/MusicVisualizer.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
